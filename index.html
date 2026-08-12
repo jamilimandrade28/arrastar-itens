@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aprender Programação — Arrastar Itens</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Aprender Programação</h1>
+      <p>Organize tópicos e projetos arrastando os itens para criar seu plano de estudos.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="board">
+      <div class="column">
+        <h2>Caixa de Tópicos</h2>
+        <ul id="toolbox" class="dropzone">
+          <li class="draggable" draggable="true" id="item-js">JavaScript</li>
+          <li class="draggable" draggable="true" id="item-python">Python</li>
+          <li class="draggable" draggable="true" id="item-html">HTML &amp; CSS</li>
+          <li class="draggable" draggable="true" id="item-ds">Estruturas de Dados</li>
+          <li class="draggable" draggable="true" id="item-algo">Algoritmos</li>
+          <li class="draggable" draggable="true" id="item-git">Git &amp; GitHub</li>
+          <li class="draggable" draggable="true" id="item-sql">SQL</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h2>Aprender Agora</h2>
+        <ul id="learn" class="dropzone empty">
+          <li class="placeholder">Arraste aqui para adicionar</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h2>Projetos</h2>
+        <ul id="projects" class="dropzone empty">
+          <li class="placeholder">Arraste aqui para planejar projetos</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Sobre este site</h2>
+      <p>Este é um exemplo de site educativo que mostra tópicos de programação. Use a funcionalidade de arrastar para organizar quais tópicos estudar e quais colocar em projetos práticos.</p>
+      <p>Dicas: arraste um item de "Caixa de Tópicos" para "Aprender Agora" ou "Projetos". Dentro de uma coluna, arraste para ordenar.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Feito com ♥ — personalize como quiser.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
